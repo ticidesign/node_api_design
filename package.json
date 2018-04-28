@@ -1,0 +1,27 @@
+{
+  "name": "node_api_design",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ticidesign/node_api_design.git",
+  "author": "Ticiana <ticipp@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack --colors --progress"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "raw-loader": "^0.5.1",
+    "source-map-support": "^0.5.0",
+    "start-server-webpack-plugin": "^2.2.0",
+    "webpack": "^3.6.0",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
