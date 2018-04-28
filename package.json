@@ -1,0 +1,11 @@
+{
+  "name": "node_api_design",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ticidesign/node_api_design.git",
+  "author": "Ticiana <ticipp@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
