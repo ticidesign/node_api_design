@@ -1,9 +1,16 @@
 import express from "express";
 
-// Declare an app from express
 const app = express();
 
-// setup basic routing for index route
+//Declare a separate router
+const apiRouter = express.Router();
+apiRouter.get("/", (req, res) => res.json({ api: true }));
+apiRouter.all("*", (req, res) => res.json({ apiAll: true }));
+
+//Mount new router to app
+app.use("/api", apiRouter);
+
+app.get("/", (req, res) => res.json({ first: true }));
 app.all("*", (req, res) => {
   res.json({ ok: false });
 });
