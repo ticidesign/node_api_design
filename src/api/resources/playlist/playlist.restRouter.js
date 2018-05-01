@@ -3,7 +3,7 @@ import playlistController from "./playlist.controller";
 
 export const playlistRouter = express.Router();
 
-songRouter.param("id", playlistController.findByParam);
+playlistRouter.param("id", playlistController.findByParam);
 
 playlistRouter
   .route("/")
@@ -14,4 +14,4 @@ playlistRouter
   .route("/:id")
   .get(playlistController.getOne)
   .put(playlistController.updateOne)
-  .delete(playlistController.createOne);
+  .delete(playlistController.deleteOne);

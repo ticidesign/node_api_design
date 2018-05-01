@@ -1,4 +1,5 @@
 import express from "express";
+import { restRouter } from "./api";
 
 const app = express();
 

@@ -14,4 +14,4 @@ userRouter
   .route("/:id")
   .get(userController.getOne)
   .put(userController.updateOne)
-  .delete(userController.createOne);
+  .delete(userController.deleteOne);
