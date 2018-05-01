@@ -4,8 +4,8 @@ import express from "express";
 const app = express();
 
 // setup basic routing for index route
-app.get("/", (req, res) => {
-  res.json({ ok: true });
+app.all("*", (req, res) => {
+  res.json({ ok: false });
 });
 
 export default app;
